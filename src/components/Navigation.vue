@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Michaela Wagner</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -24,6 +24,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Resume</a>
         </li>
       </ul>
     </div>

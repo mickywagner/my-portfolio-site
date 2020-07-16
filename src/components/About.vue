@@ -31,8 +31,9 @@ export default {
 
 .bio {
     display: flex;
+    padding: 0 50px;
     justify-content: center;
-    margin-top: 35%;
+    align-items: center;
     height: 100%;
     width: 100%;
     
