@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div class="contact" id="contact">
         <h1>Get in touch</h1>
         <div class="form">
             <input type="email" placeholder="Email">

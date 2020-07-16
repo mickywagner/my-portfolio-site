@@ -1,5 +1,6 @@
 <template>
     <div class="about" id="about">
+        <Nav />
         <!-- Add a navigation with Logo /// About (active) Projects Contact Blog Resume -->
         <p>
             I'm a self-taught programmer and a problem-solver because 
@@ -10,8 +11,13 @@
 </template>
 
 <script>
+import Nav from './Navigation'
+
 export default {
-    name: 'About'
+    name: 'About',
+    components: {
+        Nav
+    }
 }
 
 </script>
