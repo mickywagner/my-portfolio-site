@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-sm navbar-dark">
     <a class="navbar-brand" href="#">Navbar</a>
     <button
       class="navbar-toggler"
@@ -36,4 +36,20 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.navbar-dark {
+    background: #2c3e50;
+}
+
+.navbar-brand {
+    align-self: flex-start;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+    justify-content: flex-end;
+}
+}
+
+
+</style>

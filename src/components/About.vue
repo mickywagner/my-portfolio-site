@@ -2,11 +2,12 @@
     <div class="about" id="about">
         <Nav />
         <!-- Add a navigation with Logo /// About (active) Projects Contact Blog Resume -->
-        <p>
-            I'm a self-taught programmer and a problem-solver because 
-            when you teach yourself that's what you have to do. 
-            My preferred technologies are React, Vue, NodeJS/Express.
-        </p>
+        <div class="bio">
+            <p>
+                I'm a self-taught programmer based in Salt Lake City, Utah. I'm a passionate about clean design and code. I'm forever learning and problem-solving (because that's what you do when you teach yourself). My preferred tools include React, Vue, and NodeJS/Express.
+            </p>
+        </div>
+        
     </div>
 </template>
 
@@ -26,10 +27,15 @@ export default {
 .about {
     height: 100vh;
     width: 100vw;
+}
+
+.bio {
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    margin-top: 35%;
+    height: 100%;
+    width: 100%;
+    
     p {
         max-width: 500px;
     }
