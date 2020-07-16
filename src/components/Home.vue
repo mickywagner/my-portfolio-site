@@ -3,7 +3,7 @@
     <div class="name">
       <h1>Michaela Wagner</h1>
       <p>Full Stack Developer</p>
-      <a href="#about"><button>About</button></a>
+      <a href="#about"><button>More About Me!</button></a> 
     </div>
   </div>
 </template>
@@ -34,24 +34,26 @@ export default {
   background: rgba(255, 255, 255, 0.61);
   border: 10px double #2c3e50;
   border-collapse: separate; 
+
+  button {
+    background: #2c3e50;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 5px gray;
+    &:hover {
+      color: #2c3e50;
+      background: white;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
-button {
-  background: #2c3e50;
-  padding: 5px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  color: white;
-  border: none;
-  box-shadow: 1px 1px 5px gray;
-  &:hover {
-    color: #2c3e50;
-    background: white;
-  }
-  &:focus {
-    outline: none;
-  }
-}
+
 
 
 </style>

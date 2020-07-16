@@ -5,6 +5,7 @@
             <input type="email" placeholder="Email">
             <textarea placeholder="Your message..."></textarea>
         </div>
+        <!-- Footer -->
     </div>
 </template>
 
