@@ -23,6 +23,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
+    background: #2c3e50;
   
     h1 {
         grid-area: "h";
