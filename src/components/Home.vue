@@ -5,20 +5,15 @@
       <p>Full Stack Developer</p>
       <button>About</button>
     </div>
-    <div>more stuff</div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Home',
-  props: {
-    msg: String
-  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .home {
   height: 100vh;
@@ -49,9 +44,12 @@ button {
   color: white;
   border: none;
   box-shadow: 1px 1px 5px gray;
-  &hover {
+  &:hover {
     color: #2c3e50;
     background: white;
+  }
+  &:focus {
+    outline: none;
   }
 }
 
