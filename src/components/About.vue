@@ -1,7 +1,10 @@
 <template>
     <div class="about">
+        <!-- Add a navigation with Logo /// About (active) Projects Contact Blog Resume -->
         <p>
-            I'm a self-taught programmer. 
+            I'm a self-taught programmer and a problem-solver because 
+            when you teach yourself that's what you have to do. 
+            My preferred technologies are React, Vue, NodeJS/Express.
         </p>
     </div>
 </template>
@@ -20,6 +23,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p {
+        max-width: 500px;
+    }
 }
 
 </style>
