@@ -3,7 +3,7 @@
     <div class="name">
       <h1>Michaela Wagner</h1>
       <p>Full Stack Developer</p>
-      <button>About</button>
+      <a href="#about"><button>About</button></a>
     </div>
   </div>
 </template>

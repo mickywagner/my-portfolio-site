@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="about" id="about">
         <!-- Add a navigation with Logo /// About (active) Projects Contact Blog Resume -->
         <p>
             I'm a self-taught programmer and a problem-solver because 
