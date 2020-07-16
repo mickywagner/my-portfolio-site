@@ -1,17 +1,26 @@
 <template>
     <div class="contact" id="contact">
-        <h1>Get in touch</h1>
-        <div class="form">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Your message..."></textarea>
+        <div class="contact-info">
+            <h1>Get in touch</h1>
+            <div class="form">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Your message..."></textarea>
+                <input type="submit" value="Send">
+            </div>
         </div>
-        <!-- Footer -->
+        <Footer id="foot"/>
     </div>
+    
 </template>
 
 <script>
+import Footer from "./Footer"
+
 export default {
-    name: 'Contact'
+    name: 'Contact',
+    components: {
+        Footer,
+    }
 }
 </script>
 
@@ -19,11 +28,10 @@ export default {
 .contact {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    padding-top: 60px;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
     background: lightblue;
+    overflow: hidden;
 }
 
 .form {
@@ -43,6 +51,21 @@ export default {
     textarea {
         height: 200px;
     }
+
+    input[type="submit"] {
+        background: #2c3e50;
+        color: white;
+    
+    }
 }
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 
 </style>
