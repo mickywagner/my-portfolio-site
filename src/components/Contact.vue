@@ -1,8 +1,9 @@
 <template>
     <div class="contact" id="contact">
         <div class="contact-info">
-            <h1>Get in touch</h1>
+            <h1>Get In Touch</h1>
             <div class="form">
+                <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <textarea placeholder="Your message..."></textarea>
                 <input type="submit" value="Send">
