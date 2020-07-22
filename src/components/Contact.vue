@@ -3,9 +3,9 @@
         <div class="contact-info">
             <h1>Get In Touch</h1>
             <div class="form">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Your message..."></textarea>
+                <input type="text" id="name" v-model="name" placeholder="Name">
+                <input type="email" id="email" v-model="email" placeholder="Email">
+                <textarea id="message" v-model="message" placeholder="Your message..."></textarea>
                 <input type="submit" value="Send">
             </div>
         </div>
@@ -17,11 +17,22 @@
 <script>
 import Footer from "./Footer"
 
+
 export default {
     name: 'Contact',
     components: {
         Footer,
-    }
+    },
+    data: function() {
+        return(
+            {
+                name: "",
+                email: "",
+                message: ""
+            } 
+        )
+    } 
+    
 }
 </script>
 
