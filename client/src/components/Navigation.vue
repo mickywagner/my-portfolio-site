@@ -32,33 +32,33 @@
     </v-toolbar-items>
 
       <v-app-bar-nav-icon 
-      id="nav-icon" 
+      id="nav-icon"
       @click="drawer = !drawer"
     ></v-app-bar-nav-icon>
 
     <v-navigation-drawer  
       v-model="drawer" 
-      class="light-blue darken-4"
-      :expand-on-hover="expandOnHover"
       :right="right"
-      :permanent="permanent"
+      color="white"
       app
       >
-       <v-tab>
-        <a href="#about">About</a>
-      </v-tab>
-      <v-tab>
+    <v-list-item-group>
+       <v-list-item>
+          <a href="#about">About</a>
+      </v-list-item>
+      <v-list-item>
         <a href="#projects">Projects</a>
-      </v-tab>
-      <v-tab>
+      </v-list-item>
+      <v-list-item>
         <a href="#contact">Contact</a>
-      </v-tab>
-      <v-tab>
+      </v-list-item>
+      <v-list-item>
         <a href="">Blog</a>
-      </v-tab>
-      <v-tab>
+      </v-list-item>
+      <v-list-item>
         <a href="">Resume</a>
-      </v-tab>
+      </v-list-item>
+    </v-list-item-group>
     </v-navigation-drawer>
   </v-app-bar>
 </template>
@@ -69,15 +69,24 @@ export default {
   data() {
     return {
       drawer: false,
-      right: true
+      right: true 
     }
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 a {
   color: white;
+}
+
+.v-tab {
+  padding: 0 10px;
+  
+}
+
+.v-list-item {
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 650px) {
