@@ -1,13 +1,40 @@
 <template>
-    <div class="contact" id="contact">
+    <div class="contact, light-blue" id="contact">
         <div class="contact-info">
-            <h1>Get In Touch</h1>
-            <div class="form">
-                <input type="text" id="name" v-model="name" placeholder="Name">
-                <input type="email" id="email" v-model="email" placeholder="Email">
-                <textarea id="message" v-model="message" placeholder="Your message..."></textarea>
-                <input type="submit" value="Send">
-            </div>
+            <v-form 
+                class="elevation-6"
+            >
+                <h1>Get In Touch</h1>
+                <v-text-field
+                    v-model="name"
+                    :rules="nameRules"
+                    label="Name"
+                    required
+                ></v-text-field>
+
+                <v-text-field
+                    v-model="email"
+                    :rules="emailRules"
+                    label="Email"
+                    required
+                ></v-text-field>
+
+                <v-textarea
+                    v-model="message"
+                    label="Message"
+                    required
+                    no-resize
+                    multi-line
+                >
+                </v-textarea>
+                <v-btn
+                    color="success"
+                    
+                >
+                    Send
+                </v-btn>
+    
+            </v-form>
         </div>
         <Footer id="foot"/>
     </div>
@@ -23,52 +50,30 @@ export default {
     components: {
         Footer,
     },
-    data: function() {
-        return(
-            {
-                name: "",
-                email: "",
-                message: ""
-            } 
-        )
-    } 
+    data: () => ({
+      name: '',
+      message: '',
+      nameRules: [
+        v => !!v || 'Name is required',
+        v => v.length <= 10 || 'Name must be less than 10 characters',
+      ],
+      email: '',
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid',
+      ],
+    }),
     
 }
 </script>
 
 <style lang="scss" scoped>
-.contact {
+#contact {
     height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-rows: 9fr 1fr;
-    background: lightblue;
     overflow: hidden;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 70%;
-
-    input, textarea {
-        font-size: 1em;
-        margin-bottom: 10px;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-    }
-
-    textarea {
-        height: 200px;
-    }
-
-    input[type="submit"] {
-        background: #2c3e50;
-        color: white;
-    
-    }
 }
 
 .contact-info {
@@ -77,6 +82,20 @@ export default {
     align-items: center;
     flex-direction: column;
 }
+
+.v-form {
+    width: 60%;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
 
 
 
