@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <div class="name">
       <h1>Michaela Wagner</h1>
       <p>Full Stack Developer</p>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
+#home {
   height: 100vh;
   width: 100vw;
   background: url('../assets/tempBG.jpg');
