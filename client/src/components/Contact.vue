@@ -87,7 +87,7 @@ export default {
     width: 60%;
     margin-top: 20px;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 }
 
