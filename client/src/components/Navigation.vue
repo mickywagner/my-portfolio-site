@@ -98,17 +98,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
-  color: white;
-}
-
 #title {
   background: #01579b;
 }
 
 .v-tab {
   padding: 0 10px;
-  
+}
+
+.v-tab a {
+  color: white;
 }
 
 .v-list-item {
