@@ -6,9 +6,15 @@
             >
                 <h1>Get In Touch</h1>
                 <v-text-field
-                    v-model="name"
+                    v-model="firstname"
                     :rules="nameRules"
-                    label="Name"
+                    label="First Name"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    v-model="lastname"
+                    :rules="nameRules"
+                    label="Last Name"
                     required
                 ></v-text-field>
 
@@ -29,7 +35,7 @@
                 </v-textarea>
                 <v-btn
                     color="success"
-                    
+                    @click="sendEmail"
                 >
                     Send
                 </v-btn>
@@ -51,11 +57,12 @@ export default {
         Footer,
     },
     data: () => ({
-      name: '',
+      firstname: '',
+      lastname: '',
       message: '',
       nameRules: [
         v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
+        v => v.length <= 20 || 'Name must be less than 20 characters',
       ],
       email: '',
       emailRules: [
@@ -63,6 +70,14 @@ export default {
         v => /.+@.+/.test(v) || 'E-mail must be valid',
       ],
     }),
+    methods: {
+        sendEmail() {
+            console.log('name', this.firstname)
+            console.log('name', this.lastname)
+            console.log('email', this.email)
+            console.log('message', this.message)
+        }
+    }
     
 }
 </script>
