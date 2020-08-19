@@ -24,7 +24,7 @@
         <a href="#contact">Contact</a>
       </v-tab>
       <v-tab>
-        <a href="">Resume</a>
+        <a href="http://localhost:3000/static/resume.pdf" target="_">Résumé</a>
       </v-tab>
       <v-tab>
         <a href="">Blog</a>
@@ -73,7 +73,7 @@
       <v-list-item>
         <v-icon color="grey"
             >mdi-file-account-outline</v-icon>
-        <a href="">Resume</a>
+        <a href="http://localhost:3000/static/resume.pdf" target="_">Résumé</a>
       </v-list-item>
       <v-list-item>
         <v-icon color="grey"
