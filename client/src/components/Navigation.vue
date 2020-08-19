@@ -24,10 +24,10 @@
         <a href="#contact">Contact</a>
       </v-tab>
       <v-tab>
-        <a href="">Blog</a>
+        <a href="">Resume</a>
       </v-tab>
       <v-tab>
-        <a href="">Resume</a>
+        <a href="">Blog</a>
       </v-tab>
     </v-toolbar-items>
 
@@ -40,23 +40,45 @@
       v-model="drawer" 
       :right="right"
       color="white"
+      absolute
+      temporary
       app
       >
+    <v-list-item id="title">
+        <v-list-item-avatar>
+          <v-img src="../assets/tempBG.jpg"></v-img>
+        </v-list-item-avatar>
+        <v-list-item-content>
+          <v-list-item-title>Michaela Wagner</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
     <v-list-item-group>
        <v-list-item>
-          <a href="#about">About</a>
+         <v-icon color="grey"
+            >mdi-information-outline</v-icon>
+          <a href="#about">
+            About
+          </a>
       </v-list-item>
       <v-list-item>
+        <v-icon color="grey"
+            >mdi-briefcase-outline</v-icon>
         <a href="#projects">Projects</a>
       </v-list-item>
       <v-list-item>
+        <v-icon color="grey"
+            >mdi-email-outline</v-icon>
         <a href="#contact">Contact</a>
       </v-list-item>
       <v-list-item>
-        <a href="">Blog</a>
+        <v-icon color="grey"
+            >mdi-file-account-outline</v-icon>
+        <a href="">Resume</a>
       </v-list-item>
       <v-list-item>
-        <a href="">Resume</a>
+        <v-icon color="grey"
+            >mdi-post-outline</v-icon>
+        <a href="">Blog</a>
       </v-list-item>
     </v-list-item-group>
     </v-navigation-drawer>
@@ -80,6 +102,10 @@ a {
   color: white;
 }
 
+#title {
+  background: #01579b;
+}
+
 .v-tab {
   padding: 0 10px;
   
@@ -89,6 +115,9 @@ a {
   text-transform: uppercase;
 }
 
+.v-icon {
+  margin-right: 10px;
+}
 @media only screen and (min-width: 650px) {
   #nav-icon {
     display: none;
