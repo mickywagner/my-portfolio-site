@@ -1,7 +1,12 @@
 <template>
     <div class="projects" id="projects">
-        <h1>Projects</h1>
-        <v-layout>
+        <v-app-bar
+            dark
+            color="light-blue darken-4"
+        >
+        <v-toolbar-title>Projects</v-toolbar-title>
+        </v-app-bar>
+        <v-layout class="project-item">
             <v-flex xs6>
                 <project-card />
                 <project-card />
@@ -30,24 +35,16 @@ export default {
 .projects {
     height: 100vh;
     width: 100vw;
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
-  
-    h1 {
-        grid-area: "h";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 }
 
 .project-item {
     grid-area: "pi";
-    background: pink;
+    padding: 30px;
 }
+
 
 
 </style>
