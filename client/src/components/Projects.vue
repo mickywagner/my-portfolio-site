@@ -1,16 +1,27 @@
 <template>
     <div class="projects" id="projects">
         <h1>Projects</h1>
-        <!-- Project Grid : Click brings up Modal -->
-        <div class="project-item">
-
-        </div>
+        <v-layout>
+            <v-flex xs6>
+                <project-card />
+                <project-card />
+            </v-flex>
+            <v-flex xs6 ml-10>
+                <project-card />
+                <project-card />
+            </v-flex>
+        </v-layout>
     </div>
 </template>
 
 <script>
+import ProjectCard from '@/components/ProjectCard'
+
 export default {
-    name: "Projects"
+    name: "Projects",
+    components: {
+        ProjectCard
+    }
 }
 
 </script>
@@ -23,7 +34,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
-    background: #2c3e50;
   
     h1 {
         grid-area: "h";
@@ -31,7 +41,6 @@ export default {
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: lavender;
     }
 }
 

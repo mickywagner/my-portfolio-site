@@ -5,7 +5,7 @@
                 class="elevation-6"
             >
                 <h1>Get In Touch</h1>
-                {{info}}
+                <p>{{info}}</p>
                 <v-text-field
                     v-model="firstname"
                     :rules="nameRules"
@@ -94,6 +94,10 @@ export default {
                     .then(data => {
                         console.log('succes', data)
                         this.info = 'Your message was sent!'
+                        this.firstname = ''
+                        this.lastname = ''
+                        this.email = ''
+                        this.message = ''
                     })
             } catch(err) {
                 this.info = 'Message failed to send :('
@@ -127,6 +131,10 @@ export default {
     background: white;
     padding: 30px;
     border-radius: 10px;
+
+    p {
+        color: rgb(255, 38, 0);
+    }
 }
 
 h1 {
