@@ -5,6 +5,7 @@
                 class="elevation-6"
             >
                 <h1>Get In Touch</h1>
+                {{info}}
                 <v-text-field
                     v-model="firstname"
                     :rules="nameRules"
@@ -57,6 +58,7 @@ export default {
         Footer,
     },
     data: () => ({
+      info: '',
       firstname: '',
       lastname: '',
       message: '',
@@ -71,11 +73,32 @@ export default {
       ],
     }),
     methods: {
-        sendEmail() {
-            console.log('name', this.firstname)
-            console.log('name', this.lastname)
-            console.log('email', this.email)
-            console.log('message', this.message)
+        async sendEmail() {
+            const url = "http://localhost:3000/email"
+            const data = {
+                "firstname": this.firstname,
+                "lastname": this.lastname,
+                "email": this.email,
+                "text": this.message
+            }
+            
+            const requestOptions = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            }
+        
+            try {
+                fetch(url, requestOptions)
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log('succes', data)
+                        this.info = 'Your message was sent!'
+                    })
+            } catch(err) {
+                this.info = 'Message failed to send :('
+            }
+            
         }
     }
     
