@@ -6,15 +6,15 @@
         >
         <v-toolbar-title>Projects</v-toolbar-title>
         </v-app-bar>
-        <v-layout class="project-item">
-            <v-flex xs6>
+        <v-layout class="project-item flex-wrap">
+            <v-col>
                 <project-card />
                 <project-card />
-            </v-flex>
-            <v-flex xs6 ml-10>
+            </v-col>
+            <v-col>
                 <project-card />
                 <project-card />
-            </v-flex>
+            </v-col>
         </v-layout>
     </div>
 </template>
@@ -33,15 +33,14 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
+    display: grid;
     height: 100vh;
     width: 100vw;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
 }
 
 .project-item {
-    grid-area: "pi";
     padding: 30px;
 }
 

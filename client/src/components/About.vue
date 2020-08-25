@@ -7,6 +7,15 @@
                 I'm a self-taught programmer based in Salt Lake City, Utah. I'm a passionate about clean design and code. I'm forever learning and problem-solving (because that's what you do when you teach yourself). My preferred tools include React, Vue, and NodeJS/Express.
             </p>
         </div>
+        <v-card>
+
+        </v-card>
+        <v-card>
+            
+        </v-card>
+        <v-card>
+            
+        </v-card>
         
     </div>
 </template>

@@ -8,7 +8,9 @@
             >
             <v-card-title>Project Title</v-card-title>
         </v-img>
-        <v-card-subittle>Short description of the project goes here</v-card-subittle>
+        <v-card-actions>
+            <v-icon>mdi-github</v-icon> View Github Repo
+        </v-card-actions>
     </v-card>
 </template>
 
@@ -22,7 +24,9 @@ export default {
 <style lang="scss" scoped>
 
 .v-card {
-    margin-top: 10px;
+    margin: 10px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 
