@@ -42,7 +42,7 @@
       color="white"
       absolute
       temporary
-      app
+      height="fit-content"
       >
     <v-list-item id="title">
         <v-list-item-avatar>

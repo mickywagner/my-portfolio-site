@@ -36,6 +36,7 @@ export default {
     display: grid;
     height: 100vh;
     width: 100vw;
+    overflow: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
 }
