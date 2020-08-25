@@ -4,10 +4,10 @@
       <v-toolbar-title>Projects</v-toolbar-title>
     </v-app-bar>
     <v-layout class="project-item flex-wrap">
-      <v-row>
-        <div v-for="project in projects" :key="project.id">
+      <v-row
+        class="flex-xs-wrap"
+        v-for="project in projects" :key="project.id">
           <project-card :project="project" />
-        </div>
       </v-row>
     </v-layout>
     <p>
@@ -33,14 +33,28 @@ export default {
           title: "Node/Express Inventory App",
           github: "https://github.com/mickywagner/express-inventory",
           site: "https://wandering-turtle.herokuapp.com/store/itemcopies",
-          img: "@/assets/inventoryapp.png",
+          img: require('../assets/inventoryapp.png'),
         },
         {
           id: 2,
           title: "Picsum",
           github: "https://github.com/mickywagner/picsum-app",
           site: "https://mickywagner.github.io/",
-          img: "@/assets/picsum.png",
+          img: require('../assets/picsum.png'),
+        },
+        {
+          id: 3,
+          title: "Vue Library",
+          github: "https://github.com/mickywagner/vue-library",
+          site: "https://mickywagner.github.io/vue-library/",
+          img: require('../assets/library.png'),
+        },
+        {
+          id: 4,
+          title: "REST Blog API",
+          github: "https://github.com/mickywagner/blog_rest_api/",
+          site: "https://mickywagner.github.io/blog_rest_api/",
+          img: require('../assets/blog.png'),
         },
       ],
     };

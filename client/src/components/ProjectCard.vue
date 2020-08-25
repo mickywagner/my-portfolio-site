@@ -1,5 +1,5 @@
 <template>
-    <v-card elevation-5>
+    <v-card elevation-5> 
         <v-img
               :src="project.img"
               class="white--text align-end"
@@ -25,12 +25,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .v-card {
-    margin: 10px;
-    flex-shrink: 1;
-    flex-grow: 1;
+    flex: 1;
+    margin: 20px;
+    width: 200px;
 }
-
 
 </style>
