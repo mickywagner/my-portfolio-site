@@ -116,14 +116,14 @@ export default {
 }
 
 .bio {
-  padding: 50px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
   
   p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 50px;
       text-align: justify;
   }
