@@ -37,12 +37,35 @@
                 <v-btn
                     color="success"
                     @click="sendEmail"
+                   
                 >
                     Send
                 </v-btn>
     
             </v-form>
         </div>
+
+        <v-dialog
+            v-model="dialog"
+            hide-overlay
+            persistent
+            width="300">
+
+            <v-card
+        color="primary"
+        dark
+      >
+        <v-card-text>
+          Sending...
+          <v-progress-linear
+            indeterminate
+            color="white"
+            class="mb-0"
+          ></v-progress-linear>
+        </v-card-text>
+      </v-card>
+
+        </v-dialog>
         <Footer id="foot"/>
     </div>
     
@@ -71,7 +94,13 @@ export default {
         v => !!v || 'E-mail is required',
         v => /.+@.+/.test(v) || 'E-mail must be valid',
       ],
+      dialog: false
     }),
+    watch: {
+        dialog(val) {
+            if (!val) return
+        }
+    },
     methods: {
         async sendEmail() {
             const url = "http://localhost:3000/email"
@@ -79,7 +108,7 @@ export default {
                 "firstname": this.firstname,
                 "lastname": this.lastname,
                 "email": this.email,
-                "text": this.message
+                "text": this.message, 
             }
             
             const requestOptions = {
@@ -89,16 +118,12 @@ export default {
             }
         
             try {
-                fetch(url, requestOptions)
-                    .then(res => res.json())
-                    .then(data => {
-                        console.log('succes', data)
-                        this.info = 'Your message was sent!'
-                        this.firstname = ''
-                        this.lastname = ''
-                        this.email = ''
-                        this.message = ''
-                    })
+                this.dialog = true
+                const response = await fetch(url, requestOptions)
+                console.log('succes', response)
+                this.info = 'Your message was sent!'
+                this.dialog = false
+    
             } catch(err) {
                 this.info = 'Message failed to send :('
             }
