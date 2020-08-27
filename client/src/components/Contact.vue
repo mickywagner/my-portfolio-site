@@ -1,5 +1,5 @@
 <template>
-    <div class="contact, light-blue" id="contact">
+    <div class="contact light-blue lighten-4" id="contact">
         <div class="contact-info">
             <v-form 
                 class="elevation-6"
@@ -36,8 +36,7 @@
                 </v-textarea>
                 <v-btn
                     color="success"
-                    @click="sendEmail"
-                   
+                    @submit="sendEmail"
                 >
                     Send
                 </v-btn>
@@ -151,7 +150,7 @@ export default {
 }
 
 .v-form {
-    width: 60%;
+    width: 50%;
     margin-top: 20px;
     background: white;
     padding: 30px;
@@ -159,6 +158,7 @@ export default {
 
     p {
         color: rgb(255, 38, 0);
+        font-weight: bolder;
     }
 }
 

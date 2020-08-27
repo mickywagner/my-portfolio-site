@@ -26,9 +26,10 @@
       <v-tab>
         <a href="http://localhost:3000/static/resume.pdf" target="_">Résumé</a>
       </v-tab>
-      <v-tab>
+      <!-- Need to Create Blog -->
+      <!-- <v-tab>
         <a href="">Blog</a>
-      </v-tab>
+      </v-tab> -->
     </v-toolbar-items>
 
       <v-app-bar-nav-icon 
@@ -75,11 +76,12 @@
             >mdi-file-account-outline</v-icon>
         <a href="http://localhost:3000/static/resume.pdf" target="_">Résumé</a>
       </v-list-item>
-      <v-list-item>
+      <!-- Need to Create Blog -->
+      <!-- <v-list-item>
         <v-icon color="grey"
             >mdi-post-outline</v-icon>
         <a href="">Blog</a>
-      </v-list-item>
+      </v-list-item> -->
     </v-list-item-group>
     </v-navigation-drawer>
   </v-app-bar>

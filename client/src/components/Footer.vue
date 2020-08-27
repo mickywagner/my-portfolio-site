@@ -12,18 +12,21 @@
             <v-list-item>
                 <a href="https://www.linkedin.com/in/michaela-wagner/">
                 <v-icon color="white"
+                id="linkedin"
                 >mdi-linkedin</v-icon>
                 </a>
             </v-list-item>
             <v-list-item>
                 <a href="https://www.facebook.com/michaela.wagner.545/">
                 <v-icon color="white"
+                id="facebook"
                 >mdi-facebook</v-icon>
                 </a>
             </v-list-item>
             <v-list-item>
                 <a href="https://www.instagram.com/mickywagner/">
                 <v-icon color="white"
+                    id="instagram"
                 >mdi-instagram</v-icon>
                 </a>
             </v-list-item>
@@ -64,13 +67,24 @@ export default {
 }
 
 .v-icon {
-    background: orange;
+    background: rgb(59, 67, 75);
     padding: 5px;
     border-radius: 5px;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+#facebook {
+   background:#3B5998;
+}
+
+#linkedin {
+    background: #0073b1;
+}
+#instagram {
+    background: radial-gradient(circle at 25% 110%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%),radial-gradient(circle at 25% 110%,#b9a800 0,#938500 5%,#b10f00 45%,#8c0061 60%,#002ca9 90%);
 }
 
 </style>
