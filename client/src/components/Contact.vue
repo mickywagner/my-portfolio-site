@@ -52,21 +52,21 @@
             width="300">
 
             <v-card
-        color="primary"
-        dark
-      >
+                color="blue"
+                dark
+            >
         <v-card-text>
-          Sending...
-          <v-progress-linear
+          Sending email...
+        <v-progress-linear
             indeterminate
             color="white"
             class="mb-0"
-          ></v-progress-linear>
+        ></v-progress-linear>
         </v-card-text>
       </v-card>
+    </v-dialog>
 
-        </v-dialog>
-        <Footer id="foot"/>
+    <Footer id="foot"/>
     </div>
     
 </template>

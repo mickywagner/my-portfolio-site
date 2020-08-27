@@ -1,9 +1,33 @@
 <template>
     <div class="footer">
-        <ul>
-            <li>Michaela Wagner</li>
-            <li>Github Link</li>
-        </ul>
+        <v-list
+            color="light-blue darken-4"
+        >   
+            <v-list-item>
+                <a href="https://github.com/mickywagner">
+                <v-icon color="white"
+                >mdi-github</v-icon>
+                </a>
+            </v-list-item>
+            <v-list-item>
+                <a href="https://www.linkedin.com/in/michaela-wagner/">
+                <v-icon color="white"
+                >mdi-linkedin</v-icon>
+                </a>
+            </v-list-item>
+            <v-list-item>
+                <a href="https://www.facebook.com/michaela.wagner.545/">
+                <v-icon color="white"
+                >mdi-facebook</v-icon>
+                </a>
+            </v-list-item>
+            <v-list-item>
+                <a href="https://www.instagram.com/mickywagner/">
+                <v-icon color="white"
+                >mdi-instagram</v-icon>
+                </a>
+            </v-list-item>
+        </v-list>
     </div>
 </template>
 
@@ -15,21 +39,28 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-    background: #2c3e50;
     width: 100vw;
-    color: white;
     display: flex;
-    justify-content: center;
+    background: #01579b;
 }
 
-ul {
-    list-style-type: none;
-    height: 100%;
+.v-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    li {
-        padding: 0 10px;
-    }
+    margin-left: 10px;
 }
+
+.v-list-item {
+    padding: 0 5px;
+}
+
+.v-icon {
+    background: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 </style>
