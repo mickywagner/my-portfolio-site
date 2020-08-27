@@ -110,6 +110,7 @@ export default {
 <style lang='scss' scoped>
 .about {
   width: 100vw;
+  min-height: 100vh;
   border-bottom: 1px dotted gray;
 
   h1 {
