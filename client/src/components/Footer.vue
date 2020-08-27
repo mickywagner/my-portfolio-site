@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <v-list
-            color="light-blue darken-4"
+            dark
         >   
             <v-list-item>
                 <a href="https://github.com/mickywagner">
@@ -33,7 +33,6 @@
         </v-list>
         <v-spacer></v-spacer>
         <v-list
-            color="light-blue darken-4"
             dark
         >
             <v-list-item>
@@ -53,7 +52,7 @@ export default {
 .footer {
     width: 100vw;
     display: flex;
-    background: #01579b;
+    background: #1e1e1e;
 }
 
 .v-list {

@@ -1,13 +1,13 @@
 <template>
   <div class="about" id="about">
-    <!-- <Nav /> -->
-    <div class="bio">
+    <h1>About Me</h1>
+    <v-layout class="bio">
       <div class="picture">
         <v-card
         >
           <v-img 
             max-width="300"
-            src="@/assets/me3.jpg"
+            :src="require('../assets/me3.jpg')"
           >
           </v-img>
         </v-card>
@@ -23,18 +23,13 @@
             </v-list-item>
         </v-list>
       </div>
-    </div>
+    </v-layout>
   </div>
 </template>
 
 <script>
-// import Nav from "./Navigation";
-
 export default {
   name: "About",
-  // components: {
-  //   Nav,
-  // },
   data() {
     return {
       frontend: [
@@ -114,14 +109,17 @@ export default {
 
 <style lang='scss' scoped>
 .about {
-  height: 100vh;
   width: 100vw;
   border-bottom: 1px dotted gray;
 
+  h1 {
+    padding-top: 50px;
+    text-align: center;
+  }
 }
 
 .bio {
-  padding: 80px 50px;
+  padding: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -160,7 +158,21 @@ export default {
   }
 }
 
+@media only screen and (max-width: 780px) {
+  .bio {
+    flex-direction: column;
 
+    .picture {
+      align-self: center;
+      padding-bottom: 20px;
+    }
+
+    .content {
+      padding: 0;
+      max-width: 90%;
+    }
+  }
+}
 
 
 </style>
