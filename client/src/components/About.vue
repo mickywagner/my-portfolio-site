@@ -116,7 +116,8 @@ export default {
 .about {
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  border-bottom: 1px dotted gray;
+
 }
 
 .bio {

@@ -164,6 +164,7 @@ export default {
 
 h1 {
     text-align: center;
+    color: black;
     font-size: 2rem;
 }
 
