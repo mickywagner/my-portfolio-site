@@ -125,9 +125,8 @@ export default {
     
             } catch(err) {
                 this.info = 'Message failed to send :('
-            }
-            
-        }
+            }   
+        },
     }
     
 }

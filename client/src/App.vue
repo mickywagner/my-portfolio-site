@@ -32,4 +32,8 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  background: rgb(54, 54, 54);
+  color: white;
+}
 </style>
