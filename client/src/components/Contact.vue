@@ -1,5 +1,5 @@
 <template>
-    <div class="contact light-blue lighten-4" id="contact">
+    <div class="contact" id="contact">
         <div class="contact-info">
             <v-form 
                 class="elevation-6"
@@ -150,7 +150,8 @@ export default {
 }
 
 .v-form {
-    width: 50%;
+    width: 80%;
+    max-width: 500px;
     margin-top: 20px;
     background: white;
     padding: 30px;
