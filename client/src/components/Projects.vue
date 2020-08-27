@@ -79,4 +79,5 @@ export default {
 p {
   text-align: center;
 }
+
 </style>

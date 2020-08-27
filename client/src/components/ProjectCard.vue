@@ -28,7 +28,7 @@ export default {
 .v-card {
     flex: 1;
     margin: 20px;
-    width: 200px;
+    width: 300px;
 }
 
 </style>

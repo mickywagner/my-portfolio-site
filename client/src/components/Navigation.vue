@@ -1,8 +1,6 @@
 <template>
   <v-app-bar
-    color="light-blue darken-4"
     dark
-    src="@/assets/tempBG.jpg"
     fade-img-on-scroll
     
   >

@@ -1,36 +1,39 @@
 <template>
   <div class="about" id="about">
-    <Nav />
+    <!-- <Nav /> -->
     <div class="bio">
-      <p>{{bio}}</p>
-
-      <v-layout class="techs">
-        <v-card 
-            shaped
-            color="yellow"
+      <div class="picture">
+        <v-card
         >
-          <v-card-title>Technologies</v-card-title>
-          <v-card-text id="svgs">
-            <div v-for="item in frontend" :key="item.name" class="tech-item">
-              <div class="img">
-                <img :src="item.src" />
-              </div>
-            </div>
-          </v-card-text>
+          <v-img 
+            max-width="300"
+            src="@/assets/me3.jpg"
+          >
+          </v-img>
         </v-card>
-      </v-layout>
+      </div>
+      <div class="content">
+        <p>{{bio}}</p>
+        <h3>Technologies</h3>
+        <v-list v-for="item in frontend" :key="item.name" class="tech-item">
+            <v-list-item class="img"
+            >
+              {{item.name}}
+            </v-list-item>
+        </v-list>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Nav from "./Navigation";
+// import Nav from "./Navigation";
 
 export default {
   name: "About",
-  components: {
-    Nav,
-  },
+  // components: {
+  //   Nav,
+  // },
   data() {
     return {
       frontend: [
@@ -102,7 +105,7 @@ export default {
         },
       ],
       bio:
-        "I'm a self-taught programmer based in Salt Lake City, Utah. I'm a passionate about clean design and code. I'm always learning and problem-solving (because that's what you do when you teach yourself). My preferred tools include React, Vue, and NodeJS/Express.",
+        "Hey there! I'm Michaela and I currently live in Salt Lake City. I've been teaching myself how to code for over a year now and I'm looking for web development projects/jobs to take on. I particularly enjoy working with React, Vue, and Node/Express. My other interests include photography, travel, yoga, snowboarding, and learning languages, to name a few."
     };
   },
 };
@@ -116,12 +119,20 @@ export default {
 }
 
 .bio {
-  padding: 80px;
+  padding: 80px 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   overflow: auto;
+
+  .content {
+    padding-left: 50px;
+    max-width: 60%;
+  }
   
+  .picture {
+    align-self: flex-start;
+  }
   p {
       font-size: 1.2rem;
       margin-bottom: 50px;
@@ -134,26 +145,16 @@ export default {
   max-width: 500px;
 }
 
-.v-card-title {
-    background: cyan;
-}
 
-#svgs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+.v-list {
+  display: inline-block;
+  background: rgb(54, 54, 54);
 
-.img {
-  width: 50px;
-
-  img {
-    width: 100%;
+  .v-list-item {
+    background: rgb(54, 54, 54);
   }
+  
 }
 
-.tech-item {
-  margin: 5px;
-}
+
 </style>
