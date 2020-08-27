@@ -14,9 +14,10 @@
       </div>
       <div class="content">
         <p>{{bio}}</p>
-        <h3>Technologies</h3>
-        <v-list v-for="item in frontend" :key="item.name" class="tech-item">
-            <v-list-item class="img"
+        <h3>Technologies &amp; Skills</h3>
+        <v-list v-for="item in frontend" :key="item.name">
+            <v-list-item
+              dark
             >
               {{item.name}}
             </v-list-item>
@@ -149,12 +150,16 @@ export default {
 .v-list {
   display: inline-block;
   background: rgb(54, 54, 54);
+  margin: 0;
+  padding: 0;
 
   .v-list-item {
     background: rgb(54, 54, 54);
+    border: 1px solid white;
   }
-  
 }
+
+
 
 
 </style>
