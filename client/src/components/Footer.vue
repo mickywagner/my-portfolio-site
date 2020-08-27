@@ -28,6 +28,15 @@
                 </a>
             </v-list-item>
         </v-list>
+        <v-spacer></v-spacer>
+        <v-list
+            color="light-blue darken-4"
+            dark
+        >
+            <v-list-item>
+                Michaela Wagner © 2020
+            </v-list-item>
+        </v-list>
     </div>
 </template>
 
@@ -47,6 +56,7 @@ export default {
 .v-list {
     display: flex;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .v-list-item {
