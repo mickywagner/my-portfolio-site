@@ -2,11 +2,10 @@
   <div class="projects" id="projects">
     <h1>Projects</h1>
     <v-layout class="project-item flex-wrap">
-      <v-row
-        class="flex-xs-wrap"
+      <v-flex xs12 md6
         v-for="project in projects" :key="project.id">
           <project-card :project="project" />
-      </v-row>
+      </v-flex>
     </v-layout>
     <p>
       Check out more projects on
@@ -76,8 +75,10 @@ export default {
 }
 
 .project-item {
+  flex-basis: 200px;
   padding: 0 30px 50px 30px;
 }
+
 
 p {
   text-align: center;

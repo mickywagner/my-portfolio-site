@@ -4,7 +4,7 @@
               :src="project.img"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
+              height="300px"
             >
             <v-card-title>{{project.title}}</v-card-title>
         </v-img>
@@ -13,6 +13,7 @@
                 <v-icon>mdi-github</v-icon> <a :href="project.github"> View Github Repo</a>
             </v-btn>
             <v-btn text>
+                <v-icon>mdi-open-in-new</v-icon>
                 <a :href="project.site">View Live</a>
             </v-btn>
         </v-card-actions>
@@ -32,9 +33,7 @@ export default {
 <style lang="scss" scoped>
 
 .v-card {
-    flex: 1;
-    margin: 20px;
-    max-width: 300px;
+    margin: 10px;
 }
 
 </style>
