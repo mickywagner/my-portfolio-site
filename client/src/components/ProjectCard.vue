@@ -9,7 +9,12 @@
             <v-card-title>{{project.title}}</v-card-title>
         </v-img>
         <v-card-actions>
-            <v-icon>mdi-github</v-icon> <a :href="project.github">View Github Repo</a>
+            <v-btn text>
+                <v-icon>mdi-github</v-icon> <a :href="project.github"> View Github Repo</a>
+            </v-btn>
+            <v-btn text>
+                <a :href="project.site">View Live</a>
+            </v-btn>
         </v-card-actions>
     </v-card>
 </template>
@@ -25,10 +30,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .v-card {
     flex: 1;
     margin: 20px;
-    width: 300px;
+    max-width: 300px;
 }
 
 </style>

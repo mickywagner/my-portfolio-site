@@ -64,9 +64,9 @@ export default {
 .projects {
   display: grid;
   width: 100vw;
-  overflow: auto;
+  overflow: hidden;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 125px 1fr;
   border-bottom: 1px dotted gray;
 
   h1 {
@@ -76,7 +76,7 @@ export default {
 }
 
 .project-item {
-  padding: 30px;
+  padding: 0 30px 50px 30px;
 }
 
 p {
