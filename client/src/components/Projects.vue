@@ -29,7 +29,7 @@ export default {
           id: 1,
           title: "Node/Express Inventory App",
           github: "https://github.com/mickywagner/express-inventory",
-          site: "https://wandering-turtle.herokuapp.com/store/itemcopies",
+          site: "https://wandering-turtle.herokuapp.com/store",
           img: require('../assets/inventoryapp.png'),
         },
         {

@@ -14,7 +14,7 @@
             </v-btn>
             <v-btn text>
                 <v-icon>mdi-open-in-new</v-icon>
-                <a :href="project.site">View Live</a>
+                <a :href="project.site" target="_blank">View Live</a>
             </v-btn>
         </v-card-actions>
     </v-card>
