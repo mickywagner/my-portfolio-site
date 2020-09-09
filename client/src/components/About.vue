@@ -6,7 +6,7 @@
         <v-card
         >
           <v-img 
-            max-width="300"
+            max-width="400"
             :src="require('../assets/me3.jpg')"
           >
           </v-img>
@@ -124,16 +124,16 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   overflow: auto;
-
-  .content {
-    padding-left: 50px;
-    max-width: 60%;
-  }
   
+  .content {
+    padding-left: 25px;
+  }
   .picture {
     align-self: flex-start;
   }
+  
   p {
       font-size: 1.2rem;
       margin-bottom: 50px;
@@ -156,8 +156,14 @@ export default {
   .v-list-item {
     background: rgb(54, 54, 54);
     border: 1px solid white;
+
+    &:hover {
+      animation: pulse 0.7s ease-in-out;
+    }
   }
 }
+
+
 
 @media only screen and (max-width: 780px) {
   .bio {

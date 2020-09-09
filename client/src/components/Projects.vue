@@ -27,28 +27,28 @@ export default {
       projects: [
         {
           id: 1,
-          title: "Node/Express Inventory App",
+          title: "Inventory App - Node.js / Express",
           github: "https://github.com/mickywagner/express-inventory",
           site: "https://wandering-turtle.herokuapp.com/store",
           img: require('../assets/inventoryapp.png'),
         },
         {
           id: 2,
-          title: "Picsum",
+          title: "Picsum - ReactJS Photo App",
           github: "https://github.com/mickywagner/picsum-app",
           site: "https://mickywagner.github.io/",
           img: require('../assets/picsum.png'),
         },
         {
           id: 3,
-          title: "Vue Library",
+          title: "Library - VueJS",
           github: "https://github.com/mickywagner/vue-library",
           site: "https://mickywagner.github.io/vue-library/",
           img: require('../assets/library.png'),
         },
         {
           id: 4,
-          title: "REST Blog API",
+          title: "Blog - React / Node / Express / REST API",
           github: "https://github.com/mickywagner/blog_rest_api/",
           site: "https://mickywagner.github.io/blog_rest_api/",
           img: require('../assets/blog.png'),

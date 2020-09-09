@@ -46,6 +46,10 @@ export default {
 
 .v-btn {
   margin-bottom: 50px;
+
+  &:hover {
+      animation: pulse 0.7s ease-in-out;
+    }
 }
 
 
