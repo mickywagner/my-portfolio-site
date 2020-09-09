@@ -1,8 +1,6 @@
 <template>
   <v-app-bar
     dark
-    fade-img-on-scroll
-    
   >
     <v-toolbar-title>
       <a href="#home">
@@ -126,7 +124,7 @@ export default {
 @media only screen and (max-width: 650px) {
   #main-nav {
   display: none;
-}
+  }
 }
 
 </style>
