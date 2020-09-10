@@ -102,7 +102,7 @@ export default {
     },
     methods: {
         async sendEmail() {
-            const url = "http://localhost:3000/email"
+            const url = "https://portfolio-server-mw.herokuapp.com/email"
             const data = {
                 "firstname": this.firstname,
                 "lastname": this.lastname,

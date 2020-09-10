@@ -20,7 +20,7 @@
         <a href="#contact">Contact</a>
       </v-tab>
       <v-tab>
-        <a href="http://localhost:3000/static/resume.pdf" target="_">Résumé</a>
+        <a href="https://portfolio-server-mw.herokuapp.com/static/michaela-wagner-resume.pdf" target="_">Résumé</a>
       </v-tab>
       <!-- Need to Create Blog -->
       <!-- <v-tab>
@@ -70,7 +70,7 @@
       <v-list-item>
         <v-icon color="grey"
             >mdi-file-account-outline</v-icon>
-        <a href="http://localhost:3000/static/resume.pdf" target="_">Résumé</a>
+        <a href="https://portfolio-server-mw.herokuapp.com/static/michaela-wagner-resume.pdf" target="_">Résumé</a>
       </v-list-item>
       <!-- Need to Create Blog -->
       <!-- <v-list-item>
