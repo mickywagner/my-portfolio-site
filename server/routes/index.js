@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/resume', function(req, res, next) {
-  res.redirect('/static/resume.pdf')
+  res.redirect('/static/michaela-wagner-resume.pdf')
 })
 
 router.post('/email', function(req, res, next) {
