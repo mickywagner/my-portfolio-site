@@ -35,5 +35,8 @@ export default {
 #app {
   background: rgb(54, 54, 54);
   color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 </style>

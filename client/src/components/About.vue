@@ -6,7 +6,7 @@
         <v-card
         >
           <v-img 
-            max-width="400"
+            max-width="375px"
             :src="require('../assets/me3.jpg')"
           >
           </v-img>
@@ -142,8 +142,7 @@ export default {
 }
 
 .v-card {
-  margin-right: 10px;
-  max-width: 500px;
+  max-width: 375px;
 }
 
 

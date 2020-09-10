@@ -76,7 +76,7 @@ export default {
 
 .project-item {
   flex-basis: 200px;
-  padding: 0 30px 50px 30px;
+  padding: 0 10px 50px 10px;
 }
 
 
