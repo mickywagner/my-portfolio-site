@@ -101,7 +101,7 @@ export default {
         },
       ],
       bio:
-        "Hey there! I'm Michaela and I currently live in Salt Lake City. I've been teaching myself how to code for over a year now and I'm looking for web development projects/jobs to take on. I particularly enjoy working with React, Vue, and Node/Express. My other interests include photography, travel, yoga, snowboarding, and learning languages, to name a few."
+        `Hey there! I'm Michaela and I currently live in Salt Lake City. I'm currently looking for Web Development jobs, working with either Frontend or Backend design, in Salt Lake City or remotely.  I particularly enjoy working with React, Vue, and Node/Express. \n My other interests include photography, travel, yoga, snowboarding, and learning languages, to name a few.`
     };
   },
 };
