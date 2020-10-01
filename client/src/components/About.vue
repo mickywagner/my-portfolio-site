@@ -54,6 +54,9 @@ export default {
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png",
         },
         {
+          name: "Gatsby"
+        }, 
+        {
           name: "Vue",
           src:
             "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
