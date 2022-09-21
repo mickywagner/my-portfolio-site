@@ -14,7 +14,7 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@babel/types": "^7.10.5",
